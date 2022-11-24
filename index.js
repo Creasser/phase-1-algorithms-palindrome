@@ -1,9 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  if (word === word.split('').reverse().join('')){
+    return true
+  }else{
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
+  Need to make sure all input coming in is in lowercase
+  need to reverse the string and compare it to the original
+    can reverse string by spliting into an array, reversing the array,
+    then joining it back together
+  return true for words that pass the test
 */
 
 /*
